@@ -1,5 +1,4 @@
 const mode = document.getElementById('mode_icon');
-
 mode.addEventListener('click', () => {
     const form = document.getElementById('login_form');
 
@@ -10,8 +9,6 @@ mode.addEventListener('click', () => {
         form.classList.add('dark');
         return ;
     }
-
-    
     mode.classList.remove('fa-sun');
     mode.classList.add('fa-moon');
 
