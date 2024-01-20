@@ -2,6 +2,7 @@
 
 
 :root {
+    --color-light-50: #ffffff;
     --color-light-50: #f8fafc;
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
@@ -129,7 +130,6 @@
 #forgot_password a:hover {
     color: var(--color-purple-50);
 }
-
 #login_button {
     border: none;
     background: var(--color-gradient);
@@ -140,23 +140,19 @@
     font-size: 18px;
     cursor: pointer;
 }
-
 #login_button:hover {
     transform: scale(1.05);
 }
-
 .dark#login_form {
     color: var(--color-light-50);
     background-color: var(--color-dark-100);
     animation: light-to-dark-background 0.3s ease-in-out;
 }
-
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {
     color: var(--color-light-50);
 
 }
-
 @keyframes dark-to-light-background {
     0% {
         background-color:var(--color-dark-100);
@@ -165,7 +161,6 @@
         background-color:var(--color-light-50);
     }
 }
-
 @keyframes light-to-dark-background {
     0% {
         background-color:var(--color-light-50);
