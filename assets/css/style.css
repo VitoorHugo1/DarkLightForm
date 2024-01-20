@@ -154,6 +154,7 @@
 .dark#login_form .input-field input,
 .dark#login_form .input-field i {
     color: var(--color-light-50);
+
 }
 
 @keyframes dark-to-light-background {
@@ -172,4 +173,5 @@
     100.0% {
         background-color:var(--color-dark-100); 
     }
+    
 }
