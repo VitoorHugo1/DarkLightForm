@@ -2,7 +2,6 @@
 
 
 :root {
-    --color-light-50: #ffffff;
     --color-light-50: #f8fafc;
     --color-dark-50: #797984;
     --color-dark-100: #312d37;
@@ -10,7 +9,6 @@
     --color-purple-50: #7c3aed;
     --color-purple-100: #a855f7;
     --color-purple-200: #bf46ef;
-
     --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
 }
 * {
@@ -40,7 +38,6 @@
     box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
     animation: dark-to-light-background 0.3s ease-in-out;
 }
-
 #form_header {
     display: flex;
     align-items: center;
@@ -65,7 +62,6 @@
     bottom: 10px;
     border-radius: 5px;
 }
-
 #login_form >.user_print{
     text-align: center;
     font-size: 30px;
