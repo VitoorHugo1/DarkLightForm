@@ -1,15 +1,32 @@
-const mode = document.getElementById('mode_icon');
-mode.addEventListener('click', () => {
-    const form = document.getElementById('login_form');
+function cadastrar() {
 
-    if(mode.classList.contains('fa-moon')) {
-        mode.classList.remove('fa-moon');
-        mode.classList.add('fa-sun');
-        form.classList.add('dark');
-        return ;
+    let payload = {
+        fullName: document.querySelector("#fullName").value,
+        email: document.querySelector("#email").value,
+        password: document.querySelector("#password").value
     }
-    mode.classList.remove('fa-sun');
-    mode.classList.add('fa-moon');
 
-    form.classList.remove('dark');
-});
+    fetch("", {
+            method: 'POST',
+            body: JSON.stringify(payload),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
+
+        .then(response => response.json())
+        .then(response => {
+            Swal.fire({
+                title: 'Bom Trabalho!',
+                text: "Login realizado com sucesso!",
+                icon: 'success',
+                confirmButtonText: 'Ok!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    localStorage.setItem("userName", response.fullName);
+
+                    window.location.href = "pagina.html";
+                }
+            })
+        })
+}
