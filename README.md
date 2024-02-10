@@ -1,6 +1,12 @@
 # Projeto Login Dark/Light Mode
 <p>Projeto de Login, permitindo trocar o tema de Light para Dark Theme, e sistema de login utilizando MockAPI</p>
 
+## Stack utilizada 🛠
+
+**Front-end:** HTML, CSS, JavaScript
+
+**Back-end:** MockAPI
+
 
 ## Light
 <hr>
