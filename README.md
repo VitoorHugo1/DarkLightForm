@@ -3,9 +3,9 @@
 
 ## Stack utilizada 🛠
 
-**Front-end:** HTML, CSS, JavaScript
+**Front-end:** HTML, CSS
 
-**Back-end:** MockAPI
+**Back-end:** MockAPI, JavaScript
 
 
 ## Light
